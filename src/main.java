@@ -14,7 +14,7 @@ public class main {
         int userPoints = 0;
         int computerPoints = 0;
 
-        while (userPoints < 5 && computerPoints < 5) {
+        while (userPoints <= 5 && computerPoints <= 5) {
             if (botChoice == personChoice) {
                 System.out.println("It's a tie. No points added.");
             } else if ((personChoice == 1 && botChoice == 3) ||
