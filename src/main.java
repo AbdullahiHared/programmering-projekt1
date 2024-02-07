@@ -47,9 +47,9 @@ public class main {
     }
 
     static void displayResult(int userPoints, int computerPoints) {
-        if(userPoints == computerPoints) {
+        if (userPoints == computerPoints) {
             System.out.println("The game ends in a draw");
-        } else if(userPoints > computerPoints) {
+        } else if (userPoints > computerPoints) {
             System.out.println("Congratulations! You have won the game");
         } else {
             System.out.println("Sorry, Computer wins the game");
