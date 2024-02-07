@@ -35,6 +35,8 @@ public class main {
             personChoice = getUserChoice();
             botChoice = computerChoice();
         }
+
+        displayResult(userPoints, computerPoints);
     }
 
     // Get user choice
@@ -42,6 +44,16 @@ public class main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter your choice (1 for Rock, 2 for Paper, 3 for Scissors): ");
         return sc.nextInt();
+    }
+
+    static void displayResult(int userPoints, int computerPoints) {
+        if(userPoints == computerPoints) {
+            System.out.println("The game ends in a draw");
+        } else if(userPoints > computerPoints) {
+            System.out.println("Congratulations! You have won the game");
+        } else {
+            System.out.println("Sorry, Computer wins the game");
+        }
     }
 
     // Main method
